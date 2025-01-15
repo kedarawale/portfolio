@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-white;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-5 py-2.5 rounded-full transition-all duration-300 font-medium text-base;
+  }
+  .btn-primary {
+    @apply bg-gradient-to-r from-blue-500 to-blue-600 text-white 
+           hover:from-blue-600 hover:to-blue-700
+           shadow-lg hover:shadow-xl hover:shadow-blue-500/30
+           active:scale-[0.98];
+  }
+  .btn-secondary {
+    @apply bg-gray-100 text-gray-800 
+           hover:bg-gray-200 shadow-lg hover:shadow-xl
+           dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700
+           active:scale-[0.98];
+  }
+  .btn-outline {
+    @apply border-2 border-gray-200 dark:border-gray-700 
+           hover:border-blue-500 dark:hover:border-blue-500 hover:text-blue-500
+           shadow-lg hover:shadow-xl dark:hover:shadow-blue-500/30
+           active:scale-[0.98];
+  }
+
+  .card {
+    @apply bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700
+           shadow-lg hover:shadow-2xl transition-all duration-300
+           hover:border-blue-500/20 dark:hover:border-blue-500/20;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+/* Animation delays */
+.animation-delay-300 {
+  animation-delay: 300ms;
+}
+
+.animation-delay-600 {
+  animation-delay: 600ms;
+}
+
+.animation-delay-900 {
+  animation-delay: 900ms;
+}
+
+/* Animate on scroll */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Gentle bounce animation */
+@keyframes gentleBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-gentle-bounce {
+  animation: gentleBounce 2s ease-in-out infinite;
+}
+
+/* Smooth scroll effect */
+.smooth-scroll {
+  scroll-behavior: smooth;
+  transition: all 1.5s cubic-bezier(0.645, 0.045, 0.355, 1.000) !important;
+}
+
