@@ -7,8 +7,7 @@ export default function Experiences() {
       company: "Florida State University",
       period: "Jan 2025 - Present",
       responsibilities: [
-        "Contributing to research paper on GNN watermarking, focusing on link prediction results",
-        "Conducting experiments and analysis on Graph Neural Networks "
+        "Collaborating in the implementation of GENIE watermarking framework for Graph Neural Networks using TensorFlow and PyG(PyTorch Geometric), developing modular components for watermark embedding and detection in link prediction tasks, to create an open-source package for seamless integration of watermarking capabilities in GNN applications."
       ],
       technologies: ["PyTorch", "GNN", "Machine Learning", "LLM"]
     },
@@ -17,9 +16,8 @@ export default function Experiences() {
       "company": "Tomorrows AI",
       "period": "Oct 2024 - Jan 2025",
       "responsibilities": [
-          "Developed end-to-end MLOps infrastructure on AWS, implementing CI/CD pipelines for LLM finetuning and deployment with focus on electronic components domain-specific models",
-          "Coordinated deployment and management of containerized ML services, backend APIs, and database systems across multiple production environments",
-          "Collaborated with cross-functional teams to ensure successful service deployment and maintenance"
+          "Assisted in building and fine-tuning a specialized LLM model for electronic components using AWS SageMaker, AWS Bedrock. Collaborated on data collection and preprocessing pipelines that processed over 10,000 technical documents.",
+          "Contributed to testing and deploying the model using Docker containers and AWS ECR, while helping implement automated testing workflows that reduced deployment time by 20%."
       ],
       "technologies": [
           "AWS",
@@ -54,16 +52,15 @@ export default function Experiences() {
       "company": "Letsgrowmore",
       "period": "Feb 2022 - April 2022",
       "responsibilities": [
-          "Performed intensive data wrangling for large-scale databases using Python and SQL",
-          "Created effective datasets for projects through advanced data processing",
-          "Optimized data ingestion processes resulting in 20% reduction in system downtime",
-          "Ensured consistent access to real-time data for analytical purposes"
+          
+          "Engineered a customer churn prediction system using random forest and XGBoost algorithms in Python, improving accuracy by 13% compared to previous models. Used AWS SageMaker for model training, PostgreSQL for managing the database, and improved model performance through automatic parameter tuning making the system faster and efficient.",
+          "Analyzed customer transaction data using Python and SQL to create clean datasets for business reporting. Built automated data cleaning scripts that reduced manual processing time by 20% and helped identify key customer spending patterns."
       ],
       "technologies": [
           "Python",
           "SQL",
           "Pandas",
-          "Numpy",
+          "Scikit-learn",
           "Microsoft Power BI"
       ]
   },
