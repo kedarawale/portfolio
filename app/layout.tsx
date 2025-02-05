@@ -20,7 +20,9 @@ export default function RootLayout({
         <ThemeProvider>
           {children}
         </ThemeProvider>
-        <a href="https://clustrmaps.com/site/1c3uv"  title="ClustrMaps"><img src="//www.clustrmaps.com/map_v2.png?d=cYK6aAUUJlmWNvVe-gL30touWbR9KRYb9WHSXM3rVVI&cl=ffffff" /></a>
+        <div id="hidden-clustrmap" style={{ display: 'none' }}>
+          <a href="https://clustrmaps.com/site/1c3uv"  title="ClustrMaps"><img src="//www.clustrmaps.com/map_v2.png?d=cYK6aAUUJlmWNvVe-gL30touWbR9KRYb9WHSXM3rVVI&cl=ffffff" /></a>
+        </div>
       </body>
     </html>
   )
