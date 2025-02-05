@@ -20,6 +20,7 @@ export default function RootLayout({
         <ThemeProvider>
           {children}
         </ThemeProvider>
+        <a href="http://www.clustrmaps.com/map/Kedarawale.vercel.app" title="Visit tracker for Kedarawale.vercel.app"><img src="//www.clustrmaps.com/map_v2.png?d=cYK6aAUUJlmWNvVe-gL30touWbR9KRYb9WHSXM3rVVI" /></a>
       </body>
     </html>
   )
